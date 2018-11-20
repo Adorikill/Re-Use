@@ -14,6 +14,17 @@ Outputs:
     - DB
 """
 
-# TODO: Algo de remplissage
+# On filtre les planches disponibles
 
-# TODO: Maj de la DB
+planchesDispo = [planche for planche in db if planche[4] == True]
+
+# On trie les planches disponibles
+
+if smallFirst:
+    planchesDispo.sort(key = lambda planche: planche[0])
+else:
+    planchesDispo.sort(key = lambda planche: planche[0], reversed=True)
+
+# planches de longueur au moins y : [p for p in planchesDispo if p[0] >= y]
+# récupérer la première planche :  p = planchesDispo[0]
+# largeur d'une planche p : p[1]
