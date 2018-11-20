@@ -1,6 +1,14 @@
-# dummy_db : crée une database de test
-# 
-# Format d'une planche : [longueur, largeur, epaisseur, ID, dispo, reserve, achete]
+"""
+dummy_db.py
+---
+Crée une database de test.
+Format d'une planche : [longueur, largeur, epaisseur, ID, dispo, reserve, achete]
+
+Inputs:
+    
+Outputs:
+    - DB: dummy database
+"""
 
 a = [
     [15.4, 17.5, 10, 0, True, False, False],
@@ -9,4 +17,3 @@ a = [
     [80.3, 29.1, 37, 3, True, False, False],
     [56.7, 38.9, 37, 4, True, False, False]
 ]
-a = a[:,3]
